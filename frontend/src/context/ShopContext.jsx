@@ -13,8 +13,8 @@ export const ShopContext = createContext(null)
 const ShopContextProvider = (props) => {
 
     const currency = '₹';
-    // const backendUrl = "http://localhost:4000"
-    const backendUrl = import.env.VITE_BACKEND_URL
+    const backendUrl = "https://e-commerce-back-tau.vercel.app"
+    // const backendUrl = import.env.VITE_BACKEND_URL
     const delivery_fee = 10;
     const [search, setSearch] = useState('')
     const [showSearch, setShowSearch] = useState(false)
