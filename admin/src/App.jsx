@@ -11,7 +11,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect } from 'react'
 
-export const backendUrl = 'http://localhost:4000'
+// export const backendUrl = 'http://localhost:4000'
+export const backendUrl = 'https://e-commerce-back-tau.vercel.app'
 //  export const backendUrl = import.meta.env.VITE_BACKEND_URL
 export const currency='₹'
 
