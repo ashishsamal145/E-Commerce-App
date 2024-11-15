@@ -120,7 +120,7 @@ const PlaceOrder = () => {
 
 
           } else {
-            toast.error(responseStripe.data.message)
+            toast.error(responseRazorpay.data.message)
           }
           break;
 
