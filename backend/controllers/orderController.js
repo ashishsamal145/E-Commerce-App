@@ -167,14 +167,16 @@ const placeOrderRazorpay = async (req, res) => {
             receipt: newOrder._id.toString()
         }
         //creation of an order
-        await razorpayInstance.orders.create(options, (error, order) => {
-            if (error) {
-                console.log(error);
-                return res.json({ success: false, message: error })
-            }
-            res.json({ success: true, order })
+        // await razorpayInstance.orders.create(options, (error, order) => {
+        //     if (error) {
+        //         console.log(error);
+        //         return res.json({ success: false, message: error })
+        //     }
+        //     res.json({ success: true, order })
 
-        })
+        // })
+        const order = await razorpayInstance.orders.create(options)
+        res.json({ success: true, order })
 
 
 
